@@ -49,10 +49,7 @@ module.exports = {
     ]
   },
   resolve: {
-    extensions: ['.js', '.jsx'],
-    alias: {
-      'react-redux': path.resolve(__dirname, './node_modules/react-redux/lib/index.js')
-    }
+    extensions: ['.js', '.jsx']
   },
   plugins: [
     new webpack.DefinePlugin({

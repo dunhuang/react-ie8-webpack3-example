@@ -4,13 +4,15 @@ require('es6-promise').polyfill()
 
 const React = require('react')
 const ReactDOM = require('react-dom')
-const Routes = require('./views/Routes').default
 const Provider = require('react-redux').Provider
+const Router = require('react-router').Router
 const store = require('./store').default
+const routes = require('./routes').default
+const browserHistory = require('./history').default
 
 const App = () => (
   <Provider store={store}>
-    <Routes/>
+    <Router history={browserHistory} routes={routes}/>
   </Provider>
 )
 
@@ -25,15 +27,4 @@ render(App)
 
 if(module.hot){
   module.hot.accept()
-  // console.log('---HMR started---')
-
-  // module.hot.accept('./views/Routes', () => {
-  //   const Routes = require('./views/Routes').default;
-  //   const App = () => (
-  //     <Provider store={store}>
-  //       <Routes/>
-  //     </Provider>
-  //   )
-  //   render(App)
-  // });
 }

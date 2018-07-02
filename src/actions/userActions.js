@@ -1,6 +1,6 @@
 import * as ActionTypes from '../constants/actionTypes'
 import Cookie from '../utils/cookie'
-import { browserHistory } from '../views/Routes'
+import browserHistory from '../history'
 import myfetch from '../utils/fetch'
 
 export function login (username, password, nextPathname = '/') {

@@ -20,7 +20,7 @@ npm run dev
 
 ## notice
 
-注意有些npm模块的package.json中已经有了“module”属性(根据npm最新标准)，webpack会优先用模块中的es6部分去解析，这会导致build之后的代码不能在ie8下运行，此时要进行如下配置（以react-redux为例）：
+注意有些npm模块的package.json中已经有了“module”属性(根据npm最新标准)，webpack会优先用模块中的es6部分去解析，这会导致build之后的代码不能在ie8下运行，（我们配置babel-loader不处理node_modules下的代码）此时要进行如下配置（以react-redux为例）：
 ```
   resolve: {
     ...
@@ -29,6 +29,11 @@ npm run dev
     }
   },
 ```
+
+## mock api
+
+假接口配置在/json目录下，我在server.js里有做了相应配置，在正式项目中应去除
+
 ## docs
 
 为了兼容ie8，用了一系列旧版本库，部分参考文档整理如下：
