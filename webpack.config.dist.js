@@ -8,7 +8,7 @@ const CleanWebpackPlugin = require('clean-webpack-plugin')
 
 module.exports = {
   entry: {
-    polyfill: './node_modules/babel-polyfill/lib/index.js', 
+    polyfill: 'babel-polyfill', 
     bundle: './src/index.js'
   },
   output: {
@@ -17,7 +17,7 @@ module.exports = {
   },
   module: {
     rules: [
-      { test: /\.jsx?$/, use: { loader: 'babel-loader'}, exclude:/\/node_modules\//},
+      { test: /\.jsx?$/, loader: 'babel-loader', include:path.resolve(__dirname, 'src')},
       {
         test: /\.(png|jpg|gif|svg|eot|ttf|woff|woff2)$/,
         loader: 'url-loader',
@@ -90,7 +90,7 @@ module.exports = {
     }),
     
     new ExtractTextPlugin({
-      filename: 'style.css'
+      filename: 'style_[chunkhash:8].css'
     })
   ]
 }
