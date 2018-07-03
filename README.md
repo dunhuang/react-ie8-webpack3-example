@@ -1,7 +1,5 @@
 # react-ie8-webpack3-example 
 
-刚发现只能在linux/mac系统下build，build后的文件确实可以跑在ie8下，但在win10下build则不可以在ie8运行，原因未知。
-
 ## intro
 基于webpack3来跑react+ie8的例子，项目包含的各种常用插件和库，尽量接近实际需求，有很好的参考性
 支持async/await语法，fetch，sass，redux + redux thunk
