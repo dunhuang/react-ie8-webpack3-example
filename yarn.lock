@@ -2305,9 +2305,9 @@ faye-websocket@~0.11.0:
   dependencies:
     websocket-driver ">=0.5.1"
 
-fbjs@^0.3.1:
-  version "0.3.2"
-  resolved "https://registry.yarnpkg.com/fbjs/-/fbjs-0.3.2.tgz#033a540595084b5de3509a405d06f1a2a8e5b9fb"
+fbjs@^0.6.1:
+  version "0.6.1"
+  resolved "https://registry.yarnpkg.com/fbjs/-/fbjs-0.6.1.tgz#9636b7705f5ba9684d44b72f78321254afc860f7"
   dependencies:
     core-js "^1.0.0"
     loose-envify "^1.0.0"
@@ -4670,9 +4670,9 @@ rc@^1.2.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-dom@0.14.3:
-  version "0.14.3"
-  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-0.14.3.tgz#b3f0aeeed1a433b20c5458e34439a51916818628"
+react-dom@0.14.9:
+  version "0.14.9"
+  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-0.14.9.tgz#05064a3dcf0fb1880a3b2bfc9d58c55d8d9f6293"
 
 react-redux@4.4.0:
   version "4.4.0"
@@ -4690,12 +4690,12 @@ react-router@1.0.3:
     invariant "^2.0.0"
     warning "^2.0.0"
 
-react@0.14.3:
-  version "0.14.3"
-  resolved "https://registry.yarnpkg.com/react/-/react-0.14.3.tgz#b82e7b049ee3e1e264d24ae7ea20d76e51126778"
+react@0.14.9:
+  version "0.14.9"
+  resolved "https://registry.yarnpkg.com/react/-/react-0.14.9.tgz#9110a6497c49d44ba1c0edd317aec29c2e0d91d1"
   dependencies:
     envify "^3.0.0"
-    fbjs "^0.3.1"
+    fbjs "^0.6.1"
 
 read-pkg-up@^1.0.1:
   version "1.0.1"
