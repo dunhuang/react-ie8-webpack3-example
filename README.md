@@ -1,6 +1,6 @@
 # react-ie8-webpack3-example 
 
-## intro
+## intro 
 基于webpack3来跑react+ie8的例子，项目包含的各种常用插件和库，尽量接近实际需求，有很好的参考性
 支持async/await语法，fetch，sass，redux + redux thunk
 
